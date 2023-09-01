@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto com Bootstrap</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Cvcnt Store</h2>
+
+                </div>
+
+                <div class="col">
+
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>                        
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre nós</h2>
+                    <p>Fundada em 2020, a Cvcnt Store é uma empresa especializada em tênis importados,
+                        com sede na Cidade de Vargem Grande Paulista - SP.
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-sm-12">
+                    <img src="img/tenis2.jpg" alt="Programação" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Produtos</h2>
+                    <div class="card">
+                        <img src="img/tenis5.jpg" alt="Programação" class="img-fluid" height="450px">
+                        <div class="card-body">
+                            <h5 class="card-title">Tênis Nike</h5>
+                            <p class="card-text">
+                                Perfeito para festas e passeios casuais
+                            </p>
+                            <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/tenis6.jpg" alt="Programação" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Tênis New Balance</h5>
+                            <p class="card-text">
+                                Para academia e dia-a-dia.
+                            </p>
+                            <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-2">Ver Produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/tenis7 (1).jpg" alt="Programação" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Tênis Nike</h5>
+                            <p class="card-text">
+                                Para ocasiões especias ou dia-a-dia
+                            </p>
+                            <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-3">Ver Produto</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha os campos de formulário para conversar com uns dos nossos atentendes</p>
+                </div>
+
+                <div class="col">
+                    <form class="form">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                        </div>                        
+
+                        <div class="input-group">
+                            <input class="form-control" type="email" name="email" placeholder="Digite seu email">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control" name="" rows="5"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-lg btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tênis Nike</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Tamanho Disponíveis e Preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</td>
+                                <th>Valor</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>36</td>
+                                <td>R$ 830</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>R$ 830</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>R$ 899</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>R$ 849</td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>R$ 999</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tênis New Balance</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Tamanho Disponíveis e Preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</td>
+                                <th>Valor</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>36</td>
+                                <td>R$ 600</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>R$ 600</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>R$ 650</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tênis Nike</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Tamanho Disponíveis e Preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</td>
+                                <th>Valor</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>36</td>
+                                <td>R$ 730</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>R$ 730</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>R$ 799</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>R$ 849</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.container > .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col h2 {
+    text-transform: uppercase;
+}
+
+.nav {
+    margin-bottom: 7px;
+}
+
+/* Responsividade */
+@media(max-width: 480px) {
+    .container h2 {
+        text-align: center;
+    }
+
+    .col-sm-12 {
+        text-align: center;
+    }
+
+    .row h2 {
+        display: block;
+    }
+    
+    .nav {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
