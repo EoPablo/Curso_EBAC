@@ -31,6 +31,15 @@ textarea {
     margin-bottom: 7px;
 }
 
+.carousel-control-next{    
+    opacity: 1;
+      filter: invert(1);
+}
+.carousel-control-prev{   
+    opacity: 1;
+    filter: invert(1);
+}
+
 /* Responsividade */
 @media(max-width: 480px) {
     .container h2 {
@@ -53,3 +62,4 @@ textarea {
         width: 100%;
     }
 }
+
